@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>ScamaNet</title>
+	</head>
+	<body>
+		<header>
+			<div class="logo-container">
+				<div class="logo">
+					<h1>ScamaNet</h1>
+				</div>
+				<div class="main-link">
+					<a href="#" class="nav_link main-link active-link" data-page="Главная"
+						>Главная</a
+					>
+				</div>
+			</div>
+			<nav>
+				<ul class="nav-links">
+					<li><a href="#" class="nav_link" data-page="Новости">Новости</a></li>
+					<li>
+						<a href="#" class="nav_link" data-page="Мои сайты">Мои сайты</a>
+					</li>
+					<li><a href="#" class="nav_link" data-page="F.A.Q">F.A.Q</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="container">
+				<!-- Все страницы загружены заранее -->
+				<div class="page active" id="Главная">
+					<img src="img/Microsites-amico.svg" alt="" />
+					<div class="txt_div">
+						<p class="txt">
+							Привет! Я Андрей, веб-разработчик из Берлина. Помогаю бизнесам и
+							творческим людям запускать красивые и удобные сайты.
+						</p>
+					</div>
+				</div>
+
+				<div class="page" id="Новости">
+					<img src="img/news.jpg" alt="" />
+					<div class="txt_div">
+						<p class="txt">Новости и обновления о моей работе и проектах.</p>
+					</div>
+				</div>
+
+				<div class="page" id="Мои сайты">
+					<img src="img/sites.jpg" alt="" />
+					<div class="txt_div">
+						<p class="txt">Список моих сайтов и проектов.</p>
+					</div>
+				</div>
+
+				<div class="page" id="F.A.Q">
+					<img src="img/faq.svg" class="img_faq" alt="" />
+					<div class="txt_div">
+						<h3>Сколько стоит разработка сайта?</h3>
+						<p class="txt">
+							Стоимость зависит от требований проекта. Напишите мне, и я подберу
+							оптимальное решение.
+						</p>
+						<h3>Будет ли сайт адаптирован под мобильные устройства?</h3>
+						<p class="txt">
+							Да, все сайты адаптированы под телефоны, планшеты и ПК.
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>&copy; 2025 ScamaNet</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
