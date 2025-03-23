@@ -1,32 +1,39 @@
-let links = document.querySelectorAll('.nav_link')
+// Находим все ссылки навигации и все страницы
+let links = document.querySelectorAll('.nav-list a')
 let pages = document.querySelectorAll('.page')
 
-// Функция для переключения страниц
-function updateContent(pageName) {
-	// Скрываем все страницы
+// Функция для переключения контента
+function switchPage(pageId) {
+	// Скрыть все страницы
 	pages.forEach((page) => page.classList.remove('active'))
 
-	// Показываем нужную страницу
-	let activePage = document.getElementById(pageName)
-	if (activePage) activePage.classList.add('active')
+	// Найти нужную и показать
+	let targetPage = document.getElementById(pageId)
+	if (targetPage) {
+		targetPage.classList.add('active')
+	}
+
+	// Убрать активный класс у всех ссылок
+	links.forEach((link) => link.classList.remove('active'))
+
+	// Добавить активный класс к нужной ссылке
+	links.forEach((link) => {
+		if (link.dataset.page === pageId) {
+			link.classList.add('active')
+		}
+	})
 }
 
-// Обработчик кликов на ссылки
+// Навешиваем обработчики кликов
 links.forEach((link) => {
 	link.addEventListener('click', (e) => {
-		e.preventDefault()
-		let pageName = e.target.dataset.page
-		if (!pageName) return
-
-		// Убираем класс у всех ссылок
-		links.forEach((l) => l.classList.remove('active-link'))
-		e.target.classList.add('active-link')
-
-		updateContent(pageName)
+		e.preventDefault() // Отменяем стандартное поведение ссылки
+		let pageId = link.dataset.page
+		switchPage(pageId)
 	})
 })
 
-// Устанавливаем главную страницу при загрузке
+// Включаем первую страницу по умолчанию при загрузке
 document.addEventListener('DOMContentLoaded', () => {
-	updateContent('Главная')
+	switchPage('home')
 })
