@@ -16,6 +16,7 @@
         <li><a href="#" data-page="blog">МОЙ БЛОГ</a></li>
         <li><a href="#" data-page="projects">МОИ САЙТЫ</a></li>
         <li><a href="#" data-page="faq">F.A.Q</a></li>
+        <li><a href="#" data-page="contact">Обратная связь</a></li>
       </ul>
     </nav>
   </header>
@@ -30,8 +31,10 @@
     </section>
 
     <section class="page" id="blog">
+      <div class="hp">
       <h2>Мой Блог</h2>
       <p>Здесь размещаю свежие статьи и проекты.</p>
+      </div>
     </section>
 
     <section class="page" id="projects">
@@ -43,8 +46,29 @@
       <h2>F.A.Q</h2>
       <p>Ответы на частые вопросы о разработке сайтов.</p>
     </section>
+    <section class="page centered" id="contact">
+  <form class="contact-form">
+    <h2>Связаться с нами</h2>
+    <label>
+      Имя:
+      <input type="text" name="name" placeholder="Ваше имя" required>
+    </label>
+
+    <label>
+      Email:
+      <input type="email" name="email" placeholder="example@mail.com" required>
+    </label>
+
+    <label>
+      Сообщение:
+      <textarea name="message" placeholder="Введите сообщение..." required></textarea>
+    </label>
+
+    <button type="submit">Отправить</button>
+  </form>
+</section>
   </main>
-  
+
   <footer>
     &copy; 2025 ScamaNet
   </footer>
