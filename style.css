@@ -7,6 +7,10 @@ body {
 	color: white;
 }
 
+ul {
+	list-style: none;
+}
+
 /* шапка */
 header {
 	display: flex;
@@ -50,11 +54,15 @@ header {
 /* Контент страниц */
 main {
 	padding: 40px 5%;
-	min-height: 81.3vh;
+	min-height: 81.8vh;
 }
 
 .cis {
 	width: 700px;
+}
+
+.faq_list {
+	max-width: 70vw;
 }
 
 .contact-form {
@@ -123,7 +131,7 @@ main {
 }
 
 .page.centered.active {
-	height: 81.3vh;
+	height: 81.8vh;
 	justify-content: center;
 	align-items: center;
 }

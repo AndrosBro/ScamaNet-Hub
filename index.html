@@ -1,77 +1,135 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ScamaNet</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ScamaNet</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="logo">ScamaNet</div>
+			<nav>
+				<ul class="nav-list">
+					<li><a href="#" data-page="home">ГЛАВНАЯ</a></li>
+					<li><a href="#" data-page="blog">МОЙ БЛОГ</a></li>
+					<li><a href="#" data-page="projects">МОИ САЙТЫ</a></li>
+					<li><a href="#" data-page="faq">F.A.Q</a></li>
+					<li><a href="#" data-page="contact">Обратная связь</a></li>
+				</ul>
+			</nav>
+		</header>
 
-  <header>
-    <div class="logo">ScamaNet</div>
-    <nav>
-      <ul class="nav-list">
-        <li><a href="#" data-page="home">ГЛАВНАЯ</a></li>
-        <li><a href="#" data-page="blog">МОЙ БЛОГ</a></li>
-        <li><a href="#" data-page="projects">МОИ САЙТЫ</a></li>
-        <li><a href="#" data-page="faq">F.A.Q</a></li>
-        <li><a href="#" data-page="contact">Обратная связь</a></li>
-      </ul>
-    </nav>
-  </header>
+		<main>
+			<section class="page" id="home">
+				<img src="img/Microsites-amico.svg" alt="" class="cis" />
+				<div class="hp">
+					<h2>Привет!</h2>
+					<p>
+						Я Андрей, веб-разработчик из Берлина, и это мой сайт с моими
+						проектами и мыслями
+					</p>
+				</div>
+			</section>
 
-  <main>
-    <section class="page" id="home">
-			<img src="img/Microsites-amico.svg" alt="" class="cis">
-      <div class="hp">
-      <h2>Главная</h2>
-      <p>Привет! Я Андрей, веб-разработчик из Берлина</p>
-      </div>
-    </section>
+			<section class="page" id="blog">
+				<div class="hp">
+					<h2>Мой Блог</h2>
+					<p>Здесь размещаю свежие статьи и проекты.</p>
+				</div>
+			</section>
 
-    <section class="page" id="blog">
-      <div class="hp">
-      <h2>Мой Блог</h2>
-      <p>Здесь размещаю свежие статьи и проекты.</p>
-      </div>
-    </section>
+			<section class="page" id="projects">
+				<div class="hp">
+					<h2>Мои сайты</h2>
+					<p>
+						Список сайтов и проектов, которые я реализовал или ещё реализовываю.
+					</p>
+				</div>
+			</section>
 
-    <section class="page" id="projects">
-      <h2>Мои сайты</h2>
-      <p>Список сайтов и проектов, которые я реализовал.</p>
-    </section>
+			<section class="page" id="faq">
+				<img src="img/faq.svg" alt="" class="cis" />
+				<div class="faq_list">
+					<h2>F.A.Q</h2>
+					<ul>
+						<li>
+							<h2>Сколько стоит разработка сайта?</h2>
+							<p>
+								Стоимость зависит от требований проекта. Чтобы узнать точную
+								цену, напишите мне и опишите задачу. Я подберу оптимальное
+								решение под ваш бюджет.
+							</p>
+						</li>
+						<li>
+							<h2>Будет ли сайт адаптирован под мобильные устройства?</h2>
+							<p>
+								Да, все сайты, которые я создаю, корректно отображаются на
+								телефонах, планшетах и компьютерах. Дизайн адаптируется под
+								разные экраны для удобства пользователей.
+							</p>
+						</li>
+						<li>
+							<h2>Будет ли сайт быстро загружаться?</h2>
+							<p>
+								Да, я оптимизирую код, изображения и использую современные
+								технологии (кэширование, сжатие файлов, lazy loading), чтобы
+								сайт загружался быстро.
+							</p>
+						</li>
+						<li>
+							<h2>
+								Что, если мне понадобятся изменения после завершения работы?
+							</h2>
+							<p>
+								Я могу внести правки, доработать сайт или предложить техническую
+								поддержку на регулярной основе.
+							</p>
+						</li>
+						<li>
+							<h2>Сколько времени занимает создание сайта?</h2>
+							<p>
+								Зависит от сложности. Лендинг можно сделать за 5-10 дней,
+								сложный сайт — от 2 недель и больше. Если у вас есть готовый
+								макет, процесс может быть значительно быстрее.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="page centered" id="contact">
+				<form class="contact-form">
+					<h2>Связаться с нами</h2>
+					<label>
+						Имя:
+						<input type="text" name="name" placeholder="Ваше имя" required />
+					</label>
 
-    <section class="page" id="faq">
-      <h2>F.A.Q</h2>
-      <p>Ответы на частые вопросы о разработке сайтов.</p>
-    </section>
-    <section class="page centered" id="contact">
-  <form class="contact-form">
-    <h2>Связаться с нами</h2>
-    <label>
-      Имя:
-      <input type="text" name="name" placeholder="Ваше имя" required>
-    </label>
+					<label>
+						Email:
+						<input
+							type="email"
+							name="email"
+							placeholder="example@mail.com"
+							required
+						/>
+					</label>
 
-    <label>
-      Email:
-      <input type="email" name="email" placeholder="example@mail.com" required>
-    </label>
+					<label>
+						Сообщение:
+						<textarea
+							name="message"
+							placeholder="Введите сообщение..."
+							required
+						></textarea>
+					</label>
 
-    <label>
-      Сообщение:
-      <textarea name="message" placeholder="Введите сообщение..." required></textarea>
-    </label>
+					<button type="submit">Отправить</button>
+				</form>
+			</section>
+		</main>
 
-    <button type="submit">Отправить</button>
-  </form>
-</section>
-  </main>
-
-  <footer>
-    &copy; 2025 ScamaNet
-  </footer>
-  <script src="script.js"></script>
-</body>
+		<footer>&copy; 2025 ScamaNet</footer>
+		<script src="script.js"></script>
+	</body>
 </html>
