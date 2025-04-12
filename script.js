@@ -33,6 +33,14 @@ links.forEach((link) => {
 	})
 })
 
+// Обработчики для карточек блога
+document.querySelectorAll('.blog-card').forEach(card => {
+	card.addEventListener('click', () => {
+		const articleId = card.dataset.article;
+		switchPage(articleId);
+	});
+});
+
 // Включаем первую страницу по умолчанию при загрузке
 document.addEventListener('DOMContentLoaded', () => {
 	switchPage('home')

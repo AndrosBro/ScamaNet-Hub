@@ -1,3 +1,5 @@
+<!-- временно только для пк дисплеев -->
+
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
@@ -33,18 +35,69 @@
 			</section>
 
 			<section class="page" id="blog">
-				<div class="hp">
-					<h2>Мой Блог</h2>
-					<p>Здесь размещаю свежие статьи и проекты.</p>
+				<div class="blog-gallery">
+					<div class="site-card blog-card" data-article="article1">
+						<img src="img/how-I-created.png" alt="Превью статьи 1" />
+						<h3>Как я делал свой первый сайт</h3>
+					</div>
+					<div class="site-card blog-card" data-article="article2">
+						<img
+							src="img/Does-a-frontend-need-a-backend.png"
+							alt="Превью статьи 2"
+						/>
+						<h3>Нужен ли фронтенд разработчику бэкенд?</h3>
+					</div>
+				</div>
+			</section>
+
+			<section class="page article" id="article1">
+				<div class="article-content">
+					<h2>Как я делал свой первый сайт</h2>
+					<img src="img/how-I-created.png" alt="" />
+					<p>
+						Это была история о том, как я с нуля сверстал свою первую
+						страницу...
+					</p>
+				</div>
+			</section>
+
+			<section class="page article" id="article2">
+				<div class="article-content">
+					<h2>Нужен ли фронтенд разработчику бэкенд?</h2>
+					<img src="img/Does-a-frontend-need-a-backend.png" alt="" />
+					<p>
+						В этом посте я делюсь мыслями, почему важно хотя бы немного
+						разбираться в бэкенде...
+					</p>
 				</div>
 			</section>
 
 			<section class="page" id="projects">
-				<div class="hp">
-					<h2>Мои сайты</h2>
-					<p>
-						Список сайтов и проектов, которые я реализовал или ещё реализовываю.
-					</p>
+				<div class="site-gallery">
+					<a
+						href="https://androsbro.github.io/AirProMaxFresh/"
+						class="site-card"
+						target="_blank"
+					>
+						<img src="img/AirProMaxFresh.png" alt="Сайт 1" />
+						<h3>AirProMaxFresh</h3>
+					</a>
+					<a
+						href="https://androsbro.github.io/GamePulse/"
+						class="site-card"
+						target="_blank"
+					>
+						<img src="img/GamePulseNews.png" alt="Сайт 2" />
+						<h3>GamePulseNews</h3>
+					</a>
+					<a
+						href="https://androsbro.github.io/GamePulseStore/"
+						class="site-card"
+						target="_blank"
+					>
+						<img src="img/GamePulseStore.png" alt="Сайт 1" />
+						<h3>GamePulseStore</h3>
+					</a>
 				</div>
 			</section>
 
