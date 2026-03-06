@@ -1,188 +1,38 @@
-<!-- временно только для пк дисплеев -->
-
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="ScamaNet — портфолио, блог и контакты веб-разработчика в формате удобного одностраничного сайта."
+		/>
 		<title>ScamaNet</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<header>
-			<div class="logo">ScamaNet</div>
-			<nav>
-				<ul class="nav-list">
-					<li><a href="#" data-page="home">ГЛАВНАЯ</a></li>
-					<li><a href="#" data-page="blog">МОЙ БЛОГ</a></li>
-					<li><a href="#" data-page="projects">МОИ САЙТЫ</a></li>
-					<li><a href="#" data-page="faq">F.A.Q</a></li>
-					<li><a href="#" data-page="contact">Обратная связь</a></li>
-				</ul>
-			</nav>
-		</header>
+		<div class="site-shell">
+			<header class="site-header">
+				<a class="logo" href="#home" aria-label="ScamaNet, перейти на главную">
+					ScamaNet
+				</a>
 
-		<main>
-			<section class="page" id="home">
-				<img src="img/Microsites-amico.svg" alt="" class="cis" />
-				<div class="hp">
-					<h2>Привет!</h2>
-					<p>
-						Я Андрей, веб-разработчик из Берлина, и это мой сайт с моими
-						проектами и мыслями
-					</p>
-				</div>
-			</section>
+				<nav class="site-nav" aria-label="Основная навигация">
+					<ul class="nav-list" data-role="nav"></ul>
+				</nav>
+			</header>
 
-			<section class="page" id="blog">
-				<div class="blog-gallery">
-					<div class="site-card blog-card" data-article="article1">
-						<img src="img/how-I-created.png" alt="Превью статьи 1" />
-						<h3>Как я делал свой первый сайт</h3>
-					</div>
-					<div class="site-card blog-card" data-article="article2">
-						<img
-							src="img/Does-a-frontend-need-a-backend.png"
-							alt="Превью статьи 2"
-						/>
-						<h3>Нужен ли фронтенд разработчику бэкенд?</h3>
-					</div>
-				</div>
-			</section>
+			<main class="site-main">
+				<div class="view-root" data-role="view" aria-live="polite"></div>
+				<noscript class="no-script">
+					Для работы сайта нужно включить JavaScript: навигация и контент теперь
+					рендерятся модульно.
+				</noscript>
+			</main>
 
-			<section class="page article" id="article1">
-				<div class="article-content">
-					<h2>Как я делал свой первый сайт</h2>
-					<img src="img/how-I-created.png" alt="" />
-					<p>
-						Это была история о том, как я с нуля сверстал свою первую
-						страницу...
-					</p>
-				</div>
-			</section>
+			<footer class="site-footer" data-role="footer"></footer>
+		</div>
 
-			<section class="page article" id="article2">
-				<div class="article-content">
-					<h2>Нужен ли фронтенд разработчику бэкенд?</h2>
-					<img src="img/Does-a-frontend-need-a-backend.png" alt="" />
-					<p>
-						В этом посте я делюсь мыслями, почему важно хотя бы немного
-						разбираться в бэкенде...
-					</p>
-				</div>
-			</section>
-
-			<section class="page" id="projects">
-				<div class="site-gallery">
-					<a
-						href="https://androsbro.github.io/AirProMaxFresh/"
-						class="site-card"
-						target="_blank"
-					>
-						<img src="img/AirProMaxFresh.png" alt="Сайт 1" />
-						<h3>AirProMaxFresh</h3>
-					</a>
-					<a
-						href="https://androsbro.github.io/GamePulse/"
-						class="site-card"
-						target="_blank"
-					>
-						<img src="img/GamePulseNews.png" alt="Сайт 2" />
-						<h3>GamePulseNews</h3>
-					</a>
-					<a
-						href="https://androsbro.github.io/GamePulseStore/"
-						class="site-card"
-						target="_blank"
-					>
-						<img src="img/GamePulseStore.png" alt="Сайт 1" />
-						<h3>GamePulseStore</h3>
-					</a>
-				</div>
-			</section>
-
-			<section class="page" id="faq">
-				<img src="img/faq.svg" alt="" class="cis" />
-				<div class="faq_list">
-					<h2>F.A.Q</h2>
-					<ul>
-						<li>
-							<h2>Сколько стоит разработка сайта?</h2>
-							<p>
-								Стоимость зависит от требований проекта. Чтобы узнать точную
-								цену, напишите мне и опишите задачу. Я подберу оптимальное
-								решение под ваш бюджет.
-							</p>
-						</li>
-						<li>
-							<h2>Будет ли сайт адаптирован под мобильные устройства?</h2>
-							<p>
-								Да, все сайты, которые я создаю, корректно отображаются на
-								телефонах, планшетах и компьютерах. Дизайн адаптируется под
-								разные экраны для удобства пользователей.
-							</p>
-						</li>
-						<li>
-							<h2>Будет ли сайт быстро загружаться?</h2>
-							<p>
-								Да, я оптимизирую код, изображения и использую современные
-								технологии (кэширование, сжатие файлов, lazy loading), чтобы
-								сайт загружался быстро.
-							</p>
-						</li>
-						<li>
-							<h2>
-								Что, если мне понадобятся изменения после завершения работы?
-							</h2>
-							<p>
-								Я могу внести правки, доработать сайт или предложить техническую
-								поддержку на регулярной основе.
-							</p>
-						</li>
-						<li>
-							<h2>Сколько времени занимает создание сайта?</h2>
-							<p>
-								Зависит от сложности. Лендинг можно сделать за 5-10 дней,
-								сложный сайт — от 2 недель и больше. Если у вас есть готовый
-								макет, процесс может быть значительно быстрее.
-							</p>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section class="page centered" id="contact">
-				<form class="contact-form">
-					<h2>Связаться с нами</h2>
-					<label>
-						Имя:
-						<input type="text" name="name" placeholder="Ваше имя" required />
-					</label>
-
-					<label>
-						Email:
-						<input
-							type="email"
-							name="email"
-							placeholder="example@mail.com"
-							required
-						/>
-					</label>
-
-					<label>
-						Сообщение:
-						<textarea
-							name="message"
-							placeholder="Введите сообщение..."
-							required
-						></textarea>
-					</label>
-
-					<button type="submit">Отправить</button>
-				</form>
-			</section>
-		</main>
-
-		<footer>&copy; 2025 ScamaNet</footer>
-		<script src="script.js"></script>
+		<script type="module" src="script.js"></script>
 	</body>
 </html>
